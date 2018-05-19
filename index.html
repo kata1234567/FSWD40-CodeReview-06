@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Archive</title>
+    <link href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap4-hello-world.min.css">
+    <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">MyArchive</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#books">Books
+          <span class="sr-only">(current)</span>
+        </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dvds">DVDs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#cds">CDs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#comics">Comics</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fullheight jumbo-vertical-center text-light text-center bg-dark mb-0 radius-0">
+        <div class="container">
+            <h1 class="display-2 text-light text-uppercase">Welcome to my private Archive</h1>
+            <span class="lead lead-lg">It is all about Books, DVDs, CDS and Comics. Without thoose things, the world would be very grey.</span>
+            <div class="mt-4">
+                <a href="#books" class="btn btn-danger btn-lg m-2 btn-wide">
+          <span>See my favorite ones</span>
+        </a>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper" class="container">
+        <h1 id="book_heading" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">Books</h1>
+        <div class="row justify-content-center" id="books">
+        </div>
+        <h1 id="dvds_heading" class="col-lg-4 col-md-6 col-sm-12 col-xs-12">DVDs</h1>
+        <div class="row justify-content-center" id="dvds">
+        </div>
+        <h1 id="cds_heading" class="col-lg-4 col-md-6 col-sm-12 col-xs-12">CDs</h1>
+        <div class="row justify-content-center" id="cds">
+        </div>
+        <h1 id="comics_heading" class="col-lg-4 col-md-6 col-sm-12 col-xs-12">Comics</h1>
+        <div class="row justify-content-center" id="comics">
+        </div>
+    </div>
+
+<div class="jumbotron jumbo-vertical-center text-light text-center bg-dark mb-0 radius-0 d-flex flex-column align-items-center">
+        <h3 lass="display-4">Your Favorites</h3>
+        <p class="lead">Now it is time to enter your favorites. Use the input field below.</p>
+        <p><a class="btn btn-primary btn-lg" href="#form1" role="button">LET´S START.</a></p>
+      </div>
+
+      <!-- FORM TO INSERT VALUE FOR NEW ITEM -->
+
+
+
+      <div class="container-fluid">
+        <form id="form1">
+            <div class="form-group">
+                <label for="exampleInputEmail1">
+                    <h1 class="display-4">Your Favorites</h1></label>
+                <p class="lead">
+                    Now it is time to enter your favorites. Use the input field below.
+                </p>
+                <input class="form-control" type="text" value="" id="titel_input" placeholder="Enter Titel">
+                <input class="form-control" type="text" value="" id="Author_input" placeholder="Enter Author">
+                <input class="form-control" type="text" value="" id="Genre_input" placeholder="Enter Genre">
+                <input class="form-control" type="text" value="" id="Publisher_input" placeholder="Enter Publisher">
+                <input class="form-control" type="text" value="" id="Rating_input" placeholder="Enter your Rating">
+                <input class="form-control" type="text" value="" id="Short_input" placeholder="Enter Short Description">
+            </div>
+        </form>
+        <button class="btn btn-primary btn-block" onclick="newItem()">Add your favorites </button>
+        <p id="target"></p>
+
+
+
+
+
+    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+
+</html>
